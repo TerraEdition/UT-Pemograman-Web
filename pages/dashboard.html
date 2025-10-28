@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Universitas Terbuka</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Beranda</a></li>
+            <li><a href="tracking.html">Tracking Pengiriman</a></li>
+            <li><a href="bahanAjar.html">Stok Bahan Ajar</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="welcome-card">
+            <div class="clock" id="clock">00:00:00</div>
+            <h2 id="greeting"></h2>
+        </div>
+
+        <section class="content-section">
+            <h3>Sistem Pemesanan Buku Bahan Ajar</h3>
+            <p>
+                Selamat datang di sistem akademik Universitas Terbuka.
+                Di sini Anda dapat melakukan pemesanan, memantau pengiriman,
+                serta melihat stok bahan ajar yang tersedia.
+            </p>
+            <div class="features">
+                <div class="feature-card" id="tracking-redirect">
+                    <h4>Tracking Pengiriman</h4>
+                    <p>Lihat status dan riwayat pengiriman buku bahan ajar.</p>
+                </div>
+                <div class="feature-card" id="bahan-ajar-redirect">
+                    <h4>Stok Bahan Ajar</h4>
+                    <p>Periksa ketersediaan bahan ajar berdasarkan program studi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/components/greeting.js"></script>
+    <script src="../js/components/clock.js"></script>
+</body>
+
+</html>

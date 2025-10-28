@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Halaman Login</h2>
+            <p class="subtitle">Silakan masuk untuk melanjutkan</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password" required>
+                </div>
+
+                <button type="submit" class="btn-login">Masuk</button>
+            </form>
+            <div class="login-links">
+                <a id="forgot-password-link">Lupa Password?</a> |
+                <a id="register-link">Daftar</a>
+            </div>
+        </div>
+
+        <div id="forgot-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeForgot">&times;</span>
+                <h3>Lupa Password</h3>
+                <p>Masukkan email Anda untuk reset password:</p>
+                <input type="email" id="forgot-email" placeholder="Email terdaftar">
+                <button class="btn-modal" id="button-forgot">Kirim Permintaan</button>
+            </div>
+        </div>
+
+        <div id="register-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRegister">&times;</span>
+                <h3>Daftar Pengguna Baru</h3>
+                <input type="text" id="register-name" placeholder="Nama lengkap">
+                <input type="email" id="register-email" placeholder="Email">
+                <input type="password" id="register-password" placeholder="Password">
+                <input type="text" id="register-location" placeholder="Lokasi (contoh: UPBJJ Jakarta)">
+                <button class="btn-modal" id="button-register">Daftar</button>
+            </div>
+        </div>
+
+        <script src="js/data.js"></script>
+        <script src="js/login.js"></script>
+</body>
+
+</html>

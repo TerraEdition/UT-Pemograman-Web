@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking Pengiriman</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tracking.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Universitas Terbuka</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Beranda</a></li>
+            <li><a href="#" class="active">Tracking Pengiriman</a></li>
+            <li><a href="bahanAjar.html">Stok Bahan Ajar</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="tracking-form">
+            <h2>Tracking Pengiriman Bahan Ajar</h2>
+            <p>Masukkan Nomor DO untuk melacak status pengiriman Anda.</p>
+            <input type="text" id="nomorDO" placeholder="Contoh: 2023001234" />
+            <button id="button-tracking">Lacak</button>
+        </div>
+
+        <div id="tracking-result" class="tracking-result" style="display:none;"></div>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/tracking.js"></script>
+</body>
+
+</html>

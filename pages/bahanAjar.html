@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stok Bahan Ajar</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bahanAjar.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Universitas Terbuka</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Beranda</a></li>
+            <li><a href="tracking.html">Tracking Pengiriman</a></li>
+            <li><a href="#" class="active">Stok Bahan Ajar</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2>Stok Bahan Ajar</h2>
+        <p class="subtitle">Lihat ketersediaan bahan ajar berdasarkan lokasi dan kode barang.</p>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari berdasarkan nama atau kode barang..." />
+        </div>
+
+        <div id="list-bahan-ajar" class="bahan-ajar-container"></div>
+    </main>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/bahanAjar.js"></script>
+</body>
+
+</html>

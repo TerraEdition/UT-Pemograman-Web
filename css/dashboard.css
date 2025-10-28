@@ -1,0 +1,47 @@
+.welcome-card {
+  background: var(--light-blue);
+  border-left: 6px solid var(--primary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#greeting {
+  margin: 0;
+  color: var(--primary);
+}
+
+#userInfo {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Feature section */
+.content-section {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.features {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.feature-card {
+  background: var(--light-blue);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  background: #dceaff;
+}
